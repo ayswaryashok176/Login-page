@@ -139,7 +139,7 @@ export default function App() {
       setIsLoggedIn(true);
     }, 1200);
   };
-  
+
 
   const handleLogout = () => {
     setIsLoggedIn(false);
@@ -163,7 +163,7 @@ export default function App() {
         <div style={styles.card}>
           <div style={styles.logoRow}>
             <img
-              src="/nokia-logo.png"
+              src={`${process.env.PUBLIC_URL}/nokia-logo.png`}
               alt="Nokia Logo"
               style={styles.nokiaLogo}
             />
@@ -234,8 +234,8 @@ export default function App() {
         <div style={styles.card}>
           <div style={styles.logoRow}>
             <img
-              src="/nokia-logo.png"
-              alt="Nokia Logo"
+             src={`${process.env.PUBLIC_URL}/nokia-logo.png`}
+               alt="Nokia Logo"
               style={styles.nokiaLogo}
             />
            
@@ -272,7 +272,8 @@ export default function App() {
         {/* Nokia Logo + Brand */}
         <div style={styles.logoRow}>
           <img
-            src="/nokia-logo.png"
+            src={`${process.env.PUBLIC_URL}/nokia-logo.png`}
+
             alt="Nokia Logo"
             style={styles.nokiaLogo}
           />

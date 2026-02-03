@@ -139,6 +139,7 @@ export default function App() {
       setIsLoggedIn(true);
     }, 1200);
   };
+  
 
   const handleLogout = () => {
     setIsLoggedIn(false);
